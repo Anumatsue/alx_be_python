@@ -1,4 +1,4 @@
-def perform_operations(num1 : float, num2 : float, operation : str):
+def perform_operation(num1 : float, num2 : float, operation : str):
     match operation:
         case '+':
             return num1 + num2 
