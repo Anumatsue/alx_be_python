@@ -16,4 +16,4 @@ elif scale == "F":
     result = convert_to_celsius(user_temp)
     print(f"{user_temp}\u00B0F is {result}\u00B0C")
 else:
-    print("Invalid input")
+    print("Invalid temperature. Please enter a numeric value.")
