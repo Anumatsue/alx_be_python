@@ -3,10 +3,10 @@ CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_celsius(fahrenheit):
     global FAHRENHEIT_TO_CELSIUS_FACTOR
-    return float(fahrenheit * 5/9)
+    return float(fahrenheit * FAHRENHEIT_TO_CELSIUS_FACTOR)
 def convert_to_fahrenheit(celsius):
     global CELSIUS_TO_FAHRENHEIT_FACTOR
-    return float(celsius * 9/5)
+    return float(celsius * CELSIUS_TO_FAHRENHEIT_FACTOR)
 user_temp = float(input("Enter the temperature to convert: "))
 scale = input("Is this temperature in celsius or fahrenheit? (C/F): ")
 if scale == "C":
@@ -17,3 +17,4 @@ elif scale == "F":
     print(f"{user_temp}\u00B0F is {result}\u00B0C")
 else:
     print("Invalid input")
+    
